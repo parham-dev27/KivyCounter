@@ -1,0 +1,32 @@
+<Screen>
+    label:label
+    BoxLayout:
+        size: root.width, root.height
+        orientation: "vertical"
+        padding: 20
+        spacing: 10
+        Label:
+            text: "0"
+            id: label
+            color: "#d0ebf4"
+            font_size: 40
+            pos_hint: {"center_x": .5}
+            spacing: 50
+        Button:
+            text: "+"
+            font_size: 50
+            size_hint: (1, .25)
+            pos_hint: {"center_x": .5}
+            on_press: root.add()
+            background_normal: ""
+            background_color: "#8ed1cd"
+            color: "#4b5161"
+        Button:
+            text: "Reset"
+            font_size: 25
+            size_hint: (1, .2)
+            pos_hint: {"center_x": .5}
+            on_press: root.reset()
+            background_normal: ""
+            background_color: "#626A7F"
+            color: "#8ed1cd"
